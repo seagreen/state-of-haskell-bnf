@@ -2,17 +2,15 @@
 
 [Backus-Naur form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) is technique for describing context-free grammars.
 
-The difference in clarity between specifications using BNF and ones using informal English is enormous. The following [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form<Paste>) is unlikely to translate to brief English:
+The difference in clarity between specifications using BNF and ones using informal English is enormous. The following [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) is unlikely to translate to brief English:
 ```
-number ::= minus? (positive-integer fraction? | zero fraction)
-         | zero
+number ::= "-"? (positiveInteger fraction? | "0" fraction)
+         | "0"
 ```
 
-And even if it was short it wouldn't let you generate this for free:
+And even if it was short it wouldn't let you generate this for free (using [GrammKit](https://github.com/dundalek/GrammKit)):
 
 ![Number](./example.png)
-
-The above diagram was made with [this webapp](http://www.bottlecaps.de/rr/ui). Unfortunately there's not a native program that generates nice, separate diagrams from BNF files.
 
 I think Haskell would be a natural fit for this kind of work, and so did a survey of the ecosystem to see what's been built so far. If no Haskell solution is available I list the best non-Haskell one.
 
