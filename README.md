@@ -14,7 +14,7 @@ And even if it was short it wouldn't let you generate this for free:
 
 The above diagram was made with [this webapp](http://www.bottlecaps.de/rr/ui). Unfortunately there's not a native program that generates nice, separate diagrams from BNF files.
 
-I think Haskell would be a natural fit for this kind of work, and so did a survey of the ecosystem to see what's been built so far.
+I think Haskell would be a natural fit for this kind of work, and so did a survey of the ecosystem to see what's been built so far. If no Haskell solution is available I list the best non-Haskell one.
 
 Here are my goals:
 
@@ -36,11 +36,9 @@ EBNF: None yet.
 
 #### 3. Railroad diagram generator
 
-It should generate separate diagrams for each syntax rule. It should support SVG.
-
 ABNF: None yet.
 
-EBNF: Ebnf2ps is the closest we have, though it doesn't fit the extra requirements.
+EBNF: [GrammKit](https://github.com/dundalek/GrammKit) is great for generating SVGs if you just need an executable (it's not Haskell). Ebnf2ps generates PostScript files.
 
 ## Existing Packages
 
