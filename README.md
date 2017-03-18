@@ -20,7 +20,7 @@ Here are my goals:
 
 Simply make sure a BNF file is valid.
 
-ABNF: None yet. (Perhaps build wrapper around the abnf library?)
+ABNF: None yet. Perhaps a wrapper around [parseABNF](https://github.com/Xandaros/abnf/blob/master/src/Text/ABNF/ABNF/Parser.hs#L40) should be built.
 
 EBNF: None yet. Ebnf2ps could do this, but it would also try to generate diagrams.
 
@@ -28,7 +28,7 @@ EBNF: None yet. Ebnf2ps could do this, but it would also try to generate diagram
 
 A clean, general Haskell data type that can be used by other libraries.
 
-ABNF: Not sure (investigate the abnf library).
+ABNF: [`[Rule]`](https://github.com/Xandaros/abnf/blob/master/src/Text/ABNF/ABNF/Types.hs#L23)
 
 EBNF: None yet.
 
